@@ -1,2 +1,2 @@
-# ukie-angular-boilerplate
-Angular boilerplate sceleton
+# ukie-css boilerplate
+CSS boilerplate sceleton
