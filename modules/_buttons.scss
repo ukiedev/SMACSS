@@ -1,0 +1,40 @@
+/*
+	Using prefix m-
+*/
+
+.m-button {
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+	min-width: 65px;
+	padding: 0.1em 50px 0;
+
+	color: #fff;
+	vertical-align: baseline;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	font-size: em(14);
+
+	background-color: rgba(0,0,0,0.3);
+	border: 1px solid #fff;
+
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	border-radius: 2px;
+
+	@include transition(all .2s ease);
+
+	&:hover, &.active {
+		color: #c1c1c1;
+		background-color: #fff;
+	}
+}
+
+.m-button__red {
+	@extend .-button;
+
+	background-color: red;
+}

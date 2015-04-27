@@ -1,0 +1,27 @@
+/*
+===========================
+	All The States styles
+
+	Using prefix is-
+===========================
+*/
+
+input,
+select,
+textarea {
+	&.ng-pristine.ng-invalid {
+		box-shadow: none;
+	}
+}
+
+.is-error {
+
+}
+
+.is-loading {
+
+}
+
+.is-success {
+
+}

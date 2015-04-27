@@ -1,0 +1,93 @@
+/* ----------------------------------------------------------------------------------------------------------
+ Sensible defaults tools ----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.tUp { text-transform: uppercase; }
+
+.overflow-hidden { overflow: hidden }
+.overflow-scroll { overflow: scroll }
+.overflow-auto   { overflow: auto }
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table
+}
+.clearfix:after { clear: both }
+
+.left  { float: left }
+.right { float: right }
+
+.inline       { display: inline }
+.block        { display: block }
+.inline-block { display: inline-block }
+
+.lighter { font-weight: lighter }
+.bold    { font-weight: bold }
+.regular { font-weight: normal }
+.italic  { font-style: italic }
+
+.left-align   { text-align: left }
+.center       { text-align: center }
+.right-align  { text-align: right }
+.justify      { text-align: justify }
+
+.relative { position: relative }
+.absolute { position: absolute }
+.fixed    { position: fixed }
+
+.top-0    { top: 0 }
+.right-0  { right: 0 }
+.bottom-0 { bottom: 0 }
+.left-0   { left: 0 }
+
+.nowrap { white-space: nowrap }
+
+.p0 { padding: 0; }
+.hidden{ overflow: hidden; }
+
+.m0 { margin: 0; }
+.margin-auto { margin: 0 auto; }
+
+.mt1p { margin-top: 3%; @media (min-width: $screen-sm-min) { margin-top: 1%; }}
+.mt2p { margin-top: 6%; @media (min-width: $screen-sm-min) { margin-top: 2%; }}
+.mt3p { margin-top: 6%; @media (min-width: $screen-sm-min) { margin-top: 3%; }}
+.mt5p { margin-top: 10%; @media (min-width: $screen-sm-min) { margin-top: 5%; }}
+
+.mt10 { margin-top: 10px; }
+.mt15 { margin-top: 15px; }
+.mt20 { margin-top: 20px; }
+.mt25 { margin-top: 25px; }
+
+
+.mb1p { margin-bottom: 3%; @media (min-width: $screen-sm-min) { margin-bottom: 1%; }}
+.mb2p { margin-bottom: 6%; @media (min-width: $screen-sm-min) { margin-bottom: 2%; }}
+.mb3p { margin-bottom: 6%; @media (min-width: $screen-sm-min) { margin-bottom: 3%; }}
+.mb5p { margin-bottom: 10%; @media (min-width: $screen-sm-min) { margin-bottom: 5%; }}
+
+.mb10 { margin-bottom: 10px; }
+.mb15 { margin-bottom: 15px; }
+.mb20 { margin-bottom: 20px; }
+.mb25 { margin-bottom: 25px; }
+.mb35 { margin-bottom: 35px; }
+
+.pb1p { padding-bottom: 3%; @media (min-width: $screen-sm-min) { padding-bottom: 1%; }}
+.pb5p { padding-bottom: 10%; @media (min-width: $screen-sm-min) { padding-bottom: 5%; }}
+
+.pt25 { padding-top: 25px }
+.pb25 { padding-bottom: 25px }
+
+.w100p { width: 100%; }
+.mxn20 { margin-left: 20px; margin-right: 20px; }
+
+// Images
+
+img {
+	vertical-align: middle;
+}
+
+// Responsive images (ensure images don't scale beyond their parents)
+.img-responsive {
+	@include img-responsive;
+}

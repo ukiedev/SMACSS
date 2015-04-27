@@ -1,0 +1,73 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+* {
+	@include box-sizing(border-box);
+}
+*:before,
+*:after {
+	@include box-sizing(border-box);
+}
+
+* {
+	outline: none!important;
+	-webkit-overflow-scrolling:touch;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+// Body reset
+
+body {
+	font: 14px/1.2 "Open Sans", 'Lato', Arial, sans-serif;
+	color: $text-color;
+	padding: 0;
+
+	min-width: 320px;
+	min-height: 100%;
+	position: relative;
+
+//	text-rendering: optimizelegibility;
+//	-webkit-font-smoothing: antialiased;
+//	-moz-font-smoothing: antialiased;
+
+	overflow-x: hidden;
+	overflow-y: scroll;
+
+	line-height: $line-height-base;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+
+// Links
+
+a {
+	cursor: pointer;
+	outline: medium none;
+	color: $link-color;
+	text-decoration: none;
+
+	&:active,
+	&:hover,
+	&:focus {
+		opacity: 1;
+		color: $link-hover-color;
+		text-decoration: $link-hover-decoration;
+	}
+
+
+	@include transition(color 0.2s ease 0s);
+}

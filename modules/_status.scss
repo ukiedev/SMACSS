@@ -1,0 +1,11 @@
+/*
+	Using prefix
+*/
+
+.m-status {
+
+}
+
+.m-status--orders {
+	@extend .module-status;
+}
